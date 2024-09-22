@@ -1,3 +1,5 @@
+import Feed from "@components/Feed";
+
 const Home = () => {
   return (
     <section className="w-full flex-cente flex-col">
@@ -11,7 +13,7 @@ const Home = () => {
         modern world to discover, create and share creative
         prompts for GenAI.
       </p>
-      {/* Feed */}
+      <Feed />
     </section>
   );
 };
