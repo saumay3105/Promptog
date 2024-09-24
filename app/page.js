@@ -9,7 +9,7 @@ const Home = () => {
         <span className="orange_gradient">AI Powered Prompts</span>
       </h1>
       <p className="desc text-center"> 
-        Promptog is an open-source AAI prompting tool for 
+        Promptog is an open-source AI prompting tool for 
         modern world to discover, create and share creative
         prompts for GenAI.
       </p>
