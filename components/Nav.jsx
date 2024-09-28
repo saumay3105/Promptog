@@ -35,7 +35,7 @@ const Nav = () => {
         />
         <p className="logo_text">Promptog</p>
       </Link>
-      {/* Mobile navigation */}
+      
       <div className="sm:flex hidden">
         {isUserLoggedIn ? (
           <div className="flex gap-3 md:gap-5">
@@ -71,6 +71,12 @@ const Nav = () => {
           </>
         )}
       </div>
+      {/* Mobile navigation */}
+      {/* <div className="sm:hidden flex relative">
+        {isUserLoggedIn ? (
+          <div className="flex"></div>
+        )}   
+      </div> */}
     </nav>
   );
 };
