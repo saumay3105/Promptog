@@ -1,5 +1,5 @@
 import NextAuth from "next-auth/next";
-import GoogleProvider from 'next-auth/provider/google';
+import GoogleProvider from 'next-auth/providers/google';
 
 const handler = NextAuth({
     providers: [
@@ -15,7 +15,7 @@ const handler = NextAuth({
         try{
 
         } catch (error){
-            
+
         }
     }
 })
