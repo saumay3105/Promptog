@@ -11,6 +11,10 @@ const CreatePrompt = () => {
     prompt: "",
     tag: "",
   });
+
+  const createPrompt = async (e)=>{
+    
+  }
   return (
     <Form
       type="Create"
