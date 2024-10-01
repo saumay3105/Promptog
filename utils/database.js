@@ -1,7 +1,7 @@
 // utils/database.js
 import mongoose from "mongoose";
 
-let isConnected = false; // Global variable to track the connection status
+let isConnected = false;
 
 export const connectToDB = async () => {
   if (isConnected) {
