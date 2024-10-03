@@ -3,7 +3,7 @@ import React from 'react'
 const PromptCard = () => {
   return (
     <div>
-      pc
+      PromptCard
     </div>
   )
 }
