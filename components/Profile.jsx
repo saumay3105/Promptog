@@ -3,7 +3,8 @@ import React from 'react'
 const Profile = () => {
   return (
     <div>
-      profile
+      Welcome to my profile, Its been a while right?
+      
     </div>
   )
 }
