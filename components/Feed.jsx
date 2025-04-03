@@ -26,12 +26,21 @@ const Feed = () => {
   const fetchPosts = async (query = "") => {
     setIsLoading(true);
     try {
-      const url = query 
-        ? `/api/prompt/search?searchText=${encodeURIComponent(query)}` 
+      const url = query
+        ? `/api/prompt/search?searchText=${encodeURIComponent(query)}`
         : "/api/prompt";
-      
+
+      console.log("Fetching from:", url);
       const response = await fetch(url);
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error(`API error (${response.status}):`, errorText);
+        throw new Error(`API returned ${response.status}`);
+      }
+
       const data = await response.json();
+      console.log("Fetched data:", data);
       setPosts(data);
     } catch (error) {
       console.error("Error fetching posts:", error);
